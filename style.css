@@ -94,3 +94,38 @@ body {
         font-size: 1rem;
     }
 }
+@media (min-width: 1024px) {
+    .container {
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    .container p {
+        font-size: 2.2rem;
+    }
+
+    #time {
+        font-size: 3.5rem;
+    }
+
+    #time-format {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        padding: 5px;
+    }
+
+    .container p {
+        font-size: 1.2rem;
+    }
+
+    #time {
+        font-size: 1.8rem;
+    }
+
+    #time-format {
+        font-size: 0.9rem;
+    }
+}

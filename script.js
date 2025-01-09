@@ -1,7 +1,10 @@
 const time = document.getElementById('time');
 const timeFrame = document.getElementById('time-format')
 
-let today = new Date();
+setInterval(displayTime,1000);
+
+function displayTime(){
+    let today = new Date();
 let Hours = today.getHours();
 let Mint = today.getMinutes();
 let Sec = today.getSeconds();
@@ -20,3 +23,4 @@ if(Sec<10){
 
 time.innerText = `${Hours}:${Mint}:${Sec}`;
 timeFrame.innerText = (Hours<12)? 'AM':'PM';
+}
